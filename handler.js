@@ -263,7 +263,8 @@ async function checkTimeout(event){
         let dstHour = (new Date().getTime() - value.connectedAt) / (1000 * 3600);
 
         // タイムアウト時間を超えているか確認
-        if(dstHour > Config.TIMEOUT_HOUR && value.type === 'publisher') {
+        if(dstHour > Config.TIMEOUT_HOUR) {
+        // if(dstHour > Config.TIMEOUT_HOUR && value.type === 'publisher') {
 
           deleteIds.push(value.id);
 

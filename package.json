@@ -2,6 +2,6 @@
   "devDependencies": {
     "bluebird": "^3.7.2",
     "ioredis": "^4.27.2",
-    "serverless": "^2.41.2"
+    "serverless": "^2.42.0"
   }
 }
